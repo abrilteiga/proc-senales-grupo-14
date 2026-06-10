@@ -8,9 +8,9 @@ canciones = [
     ("metal", "metal.00000.wav"),
 ]
 
-for cancion in canciones:
+for genero, archivo in canciones:
     audio, sr = librosa.load(
-        f"Data/genres_original/{cancion[0]}/{cancion[1]}",
+        f"Data/genres_original/{genero}/{archivo}",
         sr=None
     )
 
@@ -20,7 +20,7 @@ for cancion in canciones:
 
     plt.figure(figsize=(12,4))
     plt.plot(audio)
-    plt.title(f"{cancion[0]}")
+    plt.title(f"{genero}")
     plt.xlabel("Muestras")
     plt.ylabel("Amplitud")
     plt.show()

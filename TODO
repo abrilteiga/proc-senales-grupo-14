@@ -1,168 +1,66 @@
+# Proyecto: Clasificación y caracterización de géneros musicales mediante análisis tiempo-frecuencia y procesamiento digital de señales
 
-Plan general del trabajo
-Etapa 1: Comprender el dataset
-To Do
--Descargar el dataset.
- Explorar la estructura de carpetas.
- Verificar duración y frecuencia de muestreo de los audios.
- Elegir una muestra de canciones de distintos géneros.
- Cargar los audios con Python (librosa).
 
-Resultado esperado: entender qué información tienen disponible.
+## Etapa 2: Visualización de señales
+- [ ] Graficar la señal temporal de varias canciones
+- [ ] Comparar canciones de géneros distintos
+- [ ] Observar amplitud, dinámica y energía
 
-Etapa 2: Visualización de señales
-To Do
- Graficar la señal temporal de varias canciones.
- Comparar canciones de géneros distintos.
- Observar amplitud, dinámica y energía.
+---
 
-Concepto asociado:
+## Etapa 3: Análisis en frecuencia
+- [ ] Aplicar Transformada de Fourier (FFT)
+- [ ] Obtener espectros de frecuencia
+- [ ] Comparar géneros
 
-Dominio temporal
+---
 
-Pregunta:
-¿Se distinguen los géneros únicamente observando la señal temporal?
+## Etapa 4: Espectrogramas
+- [ ] Calcular STFT
+- [ ] Generar espectrogramas
+- [ ] Comparar espectrogramas entre géneros
+- [ ] Identificar patrones visuales
 
-Probablemente no.
+---
 
-Etapa 3: Análisis en frecuencia
-To Do
- Aplicar Transformada de Fourier (FFT).
- Obtener espectros de frecuencia.
- Comparar géneros.
+## Etapa 5: Filtrado
+- [ ] Diseñar filtro pasa-bajos
+- [ ] Diseñar filtro pasa-altos
+- [ ] Aplicar filtros a canciones
+- [ ] Escuchar resultados
+- [ ] Comparar espectrogramas antes y después
 
-Conceptos asociados:
+---
 
-Dominio de la frecuencia
-FFT
+## Etapa 6: Convolución y correlación
+- [ ] Calcular autocorrelación de una canción
+- [ ] Analizar periodicidades
+- [ ] Comparar correlación entre canciones del mismo género y distintos géneros
 
-Objetivo:
+---
 
-Determinar dónde se concentra la energía de cada género.
+## Etapa 7: Extracción de características
+- [ ] Extraer Spectral Centroid
+- [ ] Extraer Spectral Bandwidth
+- [ ] Extraer Spectral Rolloff
+- [ ] Extraer Zero Crossing Rate
+- [ ] Extraer MFCCs
 
-Por ejemplo:
+---
 
-Música clásica → frecuencias más distribuidas.
-Metal → mucha energía en graves y medios.
-Jazz → componentes más equilibradas.
-Etapa 4: Espectrogramas (parte central)
-To Do
- Calcular STFT.
- Generar espectrogramas.
- Comparar espectrogramas entre géneros.
- Identificar patrones visuales.
+## Etapa 8: Forecasting (opcional)
+- [ ] Dividir una canción en ventanas temporales
+- [ ] Calcular energía RMS por ventana
+- [ ] Modelar la evolución temporal
+- [ ] Intentar predecir la energía de las siguientes ventanas
 
-Conceptos asociados:
+---
 
-Procesamiento tiempo-frecuencia
-STFT
-
-Aquí es donde van a validar la hipótesis.
-
-Un espectrograma muestra:
-
-eje X = tiempo
-eje Y = frecuencia
-color = energía
-
-Ejemplos esperables:
-
-Percusión → líneas verticales.
-Notas sostenidas → líneas horizontales.
-Música electrónica → patrones repetitivos.
-Etapa 5: Filtrado
-To Do
- Diseñar filtro pasa-bajos.
- Diseñar filtro pasa-altos.
- Aplicar filtros a canciones.
- Escuchar resultados.
- Comparar espectrogramas antes y después.
-
-Conceptos asociados:
-
-FIR
-IIR
-Filtrado en frecuencia
-
-Pregunta:
-
-¿Qué información musical se pierde al eliminar determinadas bandas?
-
-Etapa 6: Convolución y correlación
-To Do
- Calcular autocorrelación de una canción.
- Analizar periodicidades.
- Comparar correlación entre canciones del mismo género y de géneros distintos.
-
-Conceptos asociados:
-
-Convolución
-Correlación
-
-Objetivo:
-
-Ver si canciones similares presentan estructuras repetitivas parecidas.
-
-Etapa 7: Extracción de características
-
-Esta etapa suele ser muy valorada.
-
-To Do
-
-Extraer:
-
- Spectral Centroid
- Spectral Bandwidth
- Spectral Rolloff
- Zero Crossing Rate
- MFCCs
-
-Con librosa es muy sencillo.
-
-Objetivo:
-
-Transformar cada canción en un conjunto de números que describan su contenido espectral.
-
-Etapa 8: Forecasting (si la materia lo exige)
-
-El forecasting es el tema más difícil de conectar con música.
-
-Una idea sencilla:
-
-To Do
- Dividir una canción en ventanas temporales.
- Calcular energía RMS por ventana.
- Modelar la evolución temporal.
- Intentar predecir la energía de las siguientes ventanas.
-
-Conceptos asociados:
-
-Series temporales
-Forecasting
-
-No hace falta hacer algo extremadamente sofisticado.
-
-Estructura final del informe
-Introducción
-Descripción del dataset
-Marco teórico
-FFT
-STFT
-Filtrado FIR e IIR
-Correlación
-Metodología
-Resultados
-Señal temporal
-Espectros
-Espectrogramas
-Filtrado
-Correlación
-Validación de la hipótesis
-Conclusiones
-
-Si quieren un trabajo que realmente aproveche todos los temas de la materia, yo centraría el proyecto en:
-
-"Clasificación y caracterización de géneros musicales mediante análisis tiempo-frecuencia y procesamiento digital de señales"
-
-porque les permite usar FFT, STFT, filtros FIR/IIR, correlación y forecasting dentro de una misma narrativa coherente.
-*/
+## Informe final
+- [ ] Introducción
+- [ ] Descripción del dataset
+- [ ] Marco teórico (FFT, STFT, Filtrado FIR/IIR, Correlación)
+- [ ] Metodología
+- [ ] Resultados (Señal temporal, Espectros, Espectrogramas, Filtrado, Correlación)
+- [ ] Validación de la hipótesis
+- [ ] Conclusiones

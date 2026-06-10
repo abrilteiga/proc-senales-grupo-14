@@ -2,12 +2,14 @@ import librosa
 import librosa.display
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 canciones = [
     ("blues", "blues.00000.wav"),
     ("classical", "classical.00000.wav"),
     ("jazz", "jazz.00000.wav"),
     ("metal", "metal.00000.wav"),
+    ("rock", "rock.00000.wav")
 ]
 
 for genero, archivo in canciones:
@@ -40,6 +42,8 @@ for genero, archivo in canciones:
 
     plt.tight_layout()
 
-    plt.savefig(f"espectograma/{genero}/espectrograma_{genero}.png")
+    os.makedirs(f"espectogramas_generados/{genero}", exist_ok=True)
+
+    plt.savefig(f"espectogramas_generados/{genero}/espectrograma_{genero}.png")
 
     plt.show()
