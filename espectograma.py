@@ -43,7 +43,10 @@ for genero, archivo in canciones:
     plt.tight_layout()
 
     os.makedirs(f"espectogramas_generados/{genero}", exist_ok=True)
+    
+    n = len(archivo)
+    name = archivo[0:n-4]
 
-    plt.savefig(f"espectogramas_generados/{genero}/espectrograma_{genero}.png")
+    plt.savefig(f"espectogramas_generados/{genero}/espectrograma_{name}.png")
 
     plt.show()
