@@ -45,6 +45,8 @@ modelo = RandomForestClassifier(
     n_estimators=200,
     random_state=42
 )
+# Se utilizan 200 árboles de decisión para aumentar la robustez de la clasificación
+# y reducir el riesgo de sobreajuste respecto a un único árbol.
 
 # Entrenar
 modelo.fit(X_train, y_train)
