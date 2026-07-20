@@ -1,0 +1,3 @@
+comparacion,archivo_a,archivo_b,lag_maximo_segundos,correlacion_maxima
+Correlación cruzada - mismo género (blues vs blues),blues.00000.wav,blues.00001.wav,-1.6034467120181406,-0.057592753
+Correlación cruzada - distinto género (blues vs metal),blues.00000.wav,metal.00000.wav,0.4021315192743764,0.04872512
