@@ -1,0 +1,3 @@
+tipo,orden,frecuencia_muestreo_hz,frecuencia_corte_hz
+lowpass,4,22050,2000
+highpass,4,22050,2000
